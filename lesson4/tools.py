@@ -1,7 +1,32 @@
 PI=3.1415926
 
-class person:
-    pass
+class Person:
+    '''
+    我是person
+    '''
+    def __init__(self,name:str,age:int): #self可省略 init:實體的初始化
+        self.name = name#atribute
+        self.age = age #atribute
+#實體方法(instantce method)
+    def echo(self):
+        print(f'我的姓名是:{self.name}')
+        print(f'我的age是:{self.age}')
+
+class Student(Person):
+    '''
+    我是學生
+    '''
+    def __init__(self,name:str,age:int,score:int):
+        super().__init__(name=name,age=age)
+        self.__score = score
+
+    @property #不能更改 
+    def score(self)->int:
+        return self.__score
+
+    def echo(self):
+        super().echo()
+        print(f'我的score是:{self.score}')
 
 def get_status(bmi:float)->str:
     '''
