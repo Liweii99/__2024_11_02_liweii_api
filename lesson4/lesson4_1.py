@@ -1,13 +1,16 @@
 def get_status(bmi:float)->str:
     '''
-    docstring
-    Parameter:
+    doc string #代表這個function的說明書
+    Parameter:#參數 標題第一個字大寫
         bmi:bmi值可以整數或浮點數
-    Return:str
-        會傳出5個狀態
+    Return:str #傳出值,傳出字串
+        會傳出6個狀態
+        - 過輕
         - 正常範圍
         - 過重 
-        - 輕度肥胖      
+        - 輕度肥胖 
+        - 中度肥胖
+        - 重度肥胖    
     '''
     if bmi >= 35 :
         bmi_str = '重度肥胖'
@@ -27,7 +30,8 @@ def BMI_math(height_cm:float, weight_kg:float)->tuple[float,str]:
     height_m = round(height_cm/100, 2)
     bmi_kg_m2 = round(weight_kg/(height_m**2), 2)
     bmi_str = get_status(bmi_kg_m2)
-    return bmi_kg_m2, bmi_str
+    return bmi_kg_m2, bmi_str #呼叫上面的function
+
 
 while(True):
     try:

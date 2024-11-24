@@ -1,3 +1,10 @@
+'''
+1.PI=3014159 常數:要大寫才知道是常數
+2.class Person: 
+    pass
+3.function  
+'''
+
 import tools
 def main():
     while(True):
@@ -12,5 +19,5 @@ def main():
     print(f"您的BMI值是{bmi_value}\n您的體重{bmi_str}")
     print("程式結束")
 
-if __name__ == '__main__':
+if __name__ == '__main__': #如果我是主執行檔,請您去執行主程式
     main()
