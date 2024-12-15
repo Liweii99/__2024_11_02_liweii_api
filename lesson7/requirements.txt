@@ -1,1 +1,1 @@
-requests==2.32.3
+requests==2.32.3  #指定版本 或requests>=2.32.3 使用最新版本本
