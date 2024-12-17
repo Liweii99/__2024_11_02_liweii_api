@@ -16,4 +16,3 @@ try:
 
     else:
         print("下載有問題")
-except
