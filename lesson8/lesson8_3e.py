@@ -41,7 +41,7 @@ st.map(
     data=df,
     latitude='latitude',
     longitude='longitude',
-    color='#FF0000',  # 紅色標記
+    color='#FF0001',  # 紅色標記
     size=15,          # 標記大小
 )
 
