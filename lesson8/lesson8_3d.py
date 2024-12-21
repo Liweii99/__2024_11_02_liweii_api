@@ -26,16 +26,13 @@ with col2:
                             '可借車輛數':item['sbi'],
                             '可還空位數':item['bemp'],
                             '營業中':item['act'],
-                            'latitude':item['lat'],
-                            'longitude':item['lng']
+                            'latitude':float(item['lat']),
+                            'longitude':float(item['lng'])
                              } for item in filter_list]
     st.dataframe(show_data)
 
 #下方顯示該地區的YouBike站點資訊的地圖
-#st.map(show_data,latitude='latitude',longitude='longitude')
-locations = pd.DataFrame([{'lat': float(item['lat']), 'lon': float(item['lng'])} for item in filter_list])
-st.map(locations)
-
+st.map(show_data,latitude='latitude',longitude='longitude')
 
 
 
