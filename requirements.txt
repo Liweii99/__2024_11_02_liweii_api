@@ -3,3 +3,4 @@ streamlit
 openpyxl
 pandas
 folium
+#pip install -r requirements.txt
