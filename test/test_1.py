@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -46,3 +47,15 @@ plt.show()
 # 6. 输出到 CSV 文件
 df.to_csv('学生数据.csv', index=False)
 print("\n数据已输出到 '学生数据.csv'")
+=======
+from IPython.display import display
+
+import ffn
+import pandas as pd
+
+stock_no = '2330.TW'
+stock_data = ffn.get([stock_no,'1101.TW'], start='2024-01-01', end='2024-12-27')
+print(type(stock_data))
+display(stock_data)  # 使用 display 函數來顯示資料
+stock_data.plot()
+>>>>>>> 28fcf27c74b6c9a6c41434f6b9cf4ecbf6b450b4
